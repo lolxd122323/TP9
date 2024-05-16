@@ -8,15 +8,13 @@ class Autor {
       this.edadPublicacion = edadPublicacion;
     }
   }
-  
-  const autores = [
+   const autores = [
     new Autor("Gabriel", "García Márquez", "Colombiano", "Cien años de soledad", 1967, 40),
     new Autor("Julio", "Cortázar", "Argentino", "Rayuela", 1963, 48),
-    // ... resto de autores
+
   ];
   
-  // Función para crear una tabla HTML
-  function crearTabla(titulos, datos) {
+function crearTabla(titulos, datos) {
     let tabla = "<table><tr>";
     titulos.forEach(titulo => tabla += `<th>${titulo}</th>`);
     tabla += "</tr>";
